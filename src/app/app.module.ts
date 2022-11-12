@@ -10,6 +10,7 @@ import { HeaderComponent } from './myContainer/header/header.component';
 import { CardsComponent } from './myContainer/cards/cards.component';
 import { FirstCardComponent } from './myContainer/cards/first-card/first-card.component';
 import { SecondCardComponent } from './myContainer/cards/second-card/second-card.component';
+import { DatabindComponent } from './databind/databind.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SecondCardComponent } from './myContainer/cards/second-card/second-card
     HeaderComponent,
     CardsComponent,
     FirstCardComponent,
-    SecondCardComponent
+    SecondCardComponent,
+    DatabindComponent
   ],
   imports: [
     BrowserModule,
