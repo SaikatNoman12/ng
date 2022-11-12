@@ -3,6 +3,7 @@
 1. Angular installation process:  
    
    // install angular globally use computer cli
+   
    npm install -g @angular/cli
 
    // install angular app
@@ -10,7 +11,7 @@
    ng new appName
 
    // how to run angular
-   
+
    ng serve
 
    ng serve -o
