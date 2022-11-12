@@ -1,6 +1,6 @@
 # NG 
 
-1. How to install angular in your computer
+1. Angular installation process:  
    
    // install angular globally use computer cli
    npm install -g @angular/cli
@@ -14,20 +14,20 @@
    ng serve -o
 
 
-2. How create components physically or use cli 
+2. Angular components create physically or use cli: 
     
     //cli
     ng generate component folderName
 
-3. Data Binding in angular
+3. Angular data binding process:
 
-    1. One way data Binding
+    1. One way data Binding:-
    
        1. String interpolation. { { } }
        2. property binding. [property] = "tsVariable"
        3. event binding. (event) = 'expression'
    
-    2. Two way data Binding
+    2. Two way data Binding:-
    
        1. ts to html
                         [(ngModel)] = 'data'
