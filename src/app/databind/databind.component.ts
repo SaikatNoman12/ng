@@ -7,16 +7,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabindComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  name: string = 'Rahid Uddin';
+
+  character: string = 'hello js';
+
+  onOff: boolean = true;
+
+  offOn: boolean = false;
+
+  myMethod(): string {
+    return `My name is ${this.name}`;
   }
 
-  name:string = 'Rahid Uddin'; 
+  // property binding:
 
-  character:string = 'hello js';
+  name2: string = 'Ulala';
 
-  onOff:boolean = true;
+  onSale: boolean = false;
 
-  offOn:boolean = false;
+  classExpression: string = 'my-class-1 my-class-2 my-class-3';
+
+  constructor() {
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  red:string = 'red';
+
+  status:boolean = true;
+
+  status2:boolean = true;
+
 }
+
+
+

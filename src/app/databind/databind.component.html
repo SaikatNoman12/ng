@@ -1,3 +1,6 @@
+<app-class-style-bind></app-class-style-bind>
+
+
 <!-- Data binding use interpolation -->
 
 <h1>My name is {{name}}</h1>
@@ -26,3 +29,43 @@
 <br>
 
 <h1>Your device are {{offOn ? 'Online' : 'Offline. Check your internet connection.'}}</h1>
+
+<br>
+<br>
+
+<h1>{{myMethod()}}</h1>
+
+<br>
+<br>
+
+<h1>Property binding</h1>
+
+<br>
+<br>
+
+<input type="text" [value]="name2">
+
+<br>
+<br>
+
+<input type="text" bind-value="name">
+
+<br>
+<br>
+
+<input type="text" [style.background-color]="red" [disabled]="false" [value]="name">
+
+<br>
+<br>
+
+<input id="ddd" type="text" [class]="classExpression" [disabled]="true" [value]="name">
+
+<br>
+<br>
+
+<input type="text" [value]="status? 'Online' : 'Offline'">
+
+<br>
+<br>
+
+<input type="text" [disabled]="status2" [value]="name">

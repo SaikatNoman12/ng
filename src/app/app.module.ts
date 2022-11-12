@@ -11,6 +11,7 @@ import { CardsComponent } from './myContainer/cards/cards.component';
 import { FirstCardComponent } from './myContainer/cards/first-card/first-card.component';
 import { SecondCardComponent } from './myContainer/cards/second-card/second-card.component';
 import { DatabindComponent } from './databind/databind.component';
+import { ClassStyleBindComponent } from './databind/class-style-bind/class-style-bind.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DatabindComponent } from './databind/databind.component';
     CardsComponent,
     FirstCardComponent,
     SecondCardComponent,
-    DatabindComponent
+    DatabindComponent,
+    ClassStyleBindComponent
   ],
   imports: [
     BrowserModule,
