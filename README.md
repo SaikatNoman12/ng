@@ -37,7 +37,7 @@
 
        3. event binding.
 
-         ****
+         (event) = 'expression'
    
     2. Two way data Binding:-
 
