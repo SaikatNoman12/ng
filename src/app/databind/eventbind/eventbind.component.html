@@ -4,3 +4,23 @@
 <button type="button" (click)="onAddCart()">Click</button>
 
 <h1>{{msg}}</h1>
+
+<br>
+<br>
+
+<input type="text" value="Nahian" (keyup)="onInputData($event)">
+
+<br>
+<br>
+
+<!-- any button -->
+<button type="button" value="TV" (click)="addProduct($event)">TV</button>
+<button type="button" value="Washing Machine" (click)="addProduct($event)">Washing Machine</button>
+<button type="button" value="Alu" (click)="addProduct($event)">Alu</button>
+
+<br>
+<br>
+
+<h1 class="div">
+    {{proD}}
+</h1>

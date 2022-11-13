@@ -10,10 +10,12 @@ export class EventbindComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
 
-  msg: string = '';
   data: boolean = true;
+  msg: string = '';
   onAddCart(): void {
     if (this.data) {
       this.msg = 'Add Product In Cart';
@@ -24,4 +26,15 @@ export class EventbindComponent implements OnInit {
     }
   }
 
+  onInputData(event: any) {
+    console.log(event.target.value);
+  }
+
+  proD: any = '';
+  addProduct(event: any): void {
+    this.proD = `${event.target.value} is added in cart. 
+    `;
+  }
+
 }
+
