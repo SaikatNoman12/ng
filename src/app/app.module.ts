@@ -13,6 +13,18 @@ import { SecondCardComponent } from './myContainer/cards/second-card/second-card
 import { DatabindComponent } from './databind/databind.component';
 import { ClassStyleBindComponent } from './databind/class-style-bind/class-style-bind.component';
 import { EventbindComponent } from './databind/eventbind/eventbind.component';
+import { TemplateRefferenceComponent } from './databind/template-refference/template-refference.component';
+import { TwoWayDataBindComponent } from './databind/two-way-data-bind/two-way-data-bind.component';
+import { FormsModule } from '@angular/forms';
+import { NgBootstrapComponent } from './ng-bootstrap/ng-bootstrap.component';
+
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+
 
 @NgModule({
   declarations: [
@@ -25,11 +37,21 @@ import { EventbindComponent } from './databind/eventbind/eventbind.component';
     SecondCardComponent,
     DatabindComponent,
     ClassStyleBindComponent,
-    EventbindComponent
+    EventbindComponent,
+    TemplateRefferenceComponent,
+    TwoWayDataBindComponent,
+    NgBootstrapComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    AccordionModule.forRoot(),
+    ButtonsModule.forRoot(),
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

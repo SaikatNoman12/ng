@@ -31,9 +31,13 @@ export class EventbindComponent implements OnInit {
   }
 
   proD: any = '';
-  addProduct(event: any): void {
-    this.proD = `${event.target.value} is added in cart. 
-    `;
+  addProduct(event: any, div: any): void {
+    this.proD += `${event.target.value} is added in cart. <br>`;
+
+    div.innerHTML = this.proD;
+
+    console.log(div);
+
   }
 
 }

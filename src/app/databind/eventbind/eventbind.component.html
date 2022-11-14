@@ -14,13 +14,12 @@
 <br>
 
 <!-- any button -->
-<button type="button" value="TV" (click)="addProduct($event)">TV</button>
-<button type="button" value="Washing Machine" (click)="addProduct($event)">Washing Machine</button>
-<button type="button" value="Alu" (click)="addProduct($event)">Alu</button>
+<button type="button" value="TV" (click)="addProduct($event,div)">TV</button>
+<button type="button" value="Washing Machine" (click)="addProduct($event,div)">Washing Machine</button>
+<button type="button" value="Alu" (click)="addProduct($event,div)">Alu</button>
 
 <br>
 <br>
 
-<h1 class="div">
-    {{proD}}
-</h1>
+<div #div class="div">
+</div>
