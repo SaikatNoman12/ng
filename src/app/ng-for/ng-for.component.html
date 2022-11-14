@@ -17,15 +17,15 @@
         <tbody>
             <tr class="h4 text-center"
                 *ngFor="let product of products;index as i; first as j;last as k;even as l;odd as m">
-                <td>{{i + 1}}</td>
-                <td>{{j}}</td>
-                <td>{{k}}</td>
-                <td>{{l}}</td>
-                <td>{{m}}</td>
-                <td>{{product.name}}</td>
-                <td>{{product.price}}</td>
-                <td>{{product.uniqueId}}</td>
-                <td><img src="{{product.img}}" [ngStyle]="styleObj" alt="{{product.name}"></td>
+                <td [ngStyle]="styleObj2">{{i + 1}}</td>
+                <td [ngStyle]="styleObj2">{{j}}</td>
+                <td [ngStyle]="styleObj2">{{k}}</td>
+                <td [ngStyle]="styleObj2">{{l}}</td>
+                <td [ngStyle]="styleObj2">{{m}}</td>
+                <td [ngStyle]="styleObj2">{{product.name}}</td>
+                <td [ngStyle]="styleObj2">{{product.price}}</td>
+                <td [ngStyle]="styleObj2">{{product.uniqueId}}</td>
+                <td [class.tdData]="isTrue"><img src="{{product.img}}" [ngStyle]="styleObj" alt="{{product.name}"></td>
             </tr>
         </tbody>
     </table>

@@ -59,9 +59,9 @@ export class NgFORComponent implements OnInit {
   };
 
   styleObj2: object = {
-    'display': 'grid',
-    'place-items': 'center'
-  }
+    'padding': '43px'
+  };
 
+  isTrue:boolean = true;
 
 }
