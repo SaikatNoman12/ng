@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { IfElseThenComponent } from './if-else-then/if-else-then.component';
+import { SwitcCaseComponent } from './switc-case/switc-case.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { IfElseThenComponent } from './if-else-then/if-else-then.component';
     TwoWayDataBindComponent,
     NgBootstrapComponent,
     IfElseThenComponent,
+    SwitcCaseComponent,
   ],
   imports: [
     BrowserModule,

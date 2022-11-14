@@ -1,0 +1,19 @@
+<div class="container m-4">
+    <div class="col-md-4 mb-4">
+        <select class="form-control" #sec [style]="objFont" name="deviceSelect" (change)="onSelectChange($event)">
+            <option value="default" selected hidden>select item</option>
+            <option value="Laptop">Laptop</option>
+            <option value="TV">TV</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <option value="Mobile">Mobile</option>
+        </select>
+    </div>
+
+    <div class="col-md-12" [ngSwitch]="switchVar">
+        <h2 class="text-success" *ngSwitchDefault>Select Item</h2>
+        <h2 class="text-success" *ngSwitchCase="'laptop'">Laptop</h2>
+        <h2 class="text-success" *ngSwitchCase="'tv'">TV</h2>
+        <h2 class="text-success" *ngSwitchCase="'washing machine'">Washing Machine</h2>
+        <h2 class="text-success" *ngSwitchCase="'mobile'">Mobile</h2>
+    </div>
+</div>
