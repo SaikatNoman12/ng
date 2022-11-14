@@ -1,0 +1,30 @@
+<div class="m-3">
+    <button class="btn btn-success" (click)="onBtnClick()">Click And Show</button>
+
+    <br>
+    <br>
+
+    <h2 *ngIf="isValid; else notValid">This Btn is clickeddddddddddd</h2>
+
+    <ng-template #notValid>
+        <h2>This btn is nottttt clicked</h2>
+    </ng-template>
+
+</div>
+
+
+<div class="m-5">
+    <button type="button" class="btn btn-success" (click)="onBtnClickTwo()">click</button>
+
+    <div class="mt-4" *ngIf="isValidTwo; then truValid else elsValid"></div>
+
+    <ng-template #truValid>
+        <h2>Button clicked</h2>
+    </ng-template>
+
+    <ng-template #elsValid>
+        <h2>Please click</h2>
+    </ng-template>
+
+
+</div>

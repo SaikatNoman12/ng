@@ -24,6 +24,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { IfElseThenComponent } from './if-else-then/if-else-then.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     TemplateRefferenceComponent,
     TwoWayDataBindComponent,
     NgBootstrapComponent,
+    IfElseThenComponent,
   ],
   imports: [
     BrowserModule,
