@@ -20,7 +20,6 @@ export class SwitcCaseComponent implements OnInit {
   switchVar: string = '';
 
   onSelectChange(event: any): void {
-    console.log(event.target.value.toLowerCase());
     this.switchVar = event.target.value.toLowerCase();
   }
 

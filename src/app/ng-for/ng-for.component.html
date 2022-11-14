@@ -1,0 +1,36 @@
+<div class="">
+    <table class="table">
+        <thead class="table-dark">
+            <tr class="h3 text-center">
+                <th>Sr. No</th>
+                <th>First</th>
+                <th>Last</th>
+                <th>Even</th>
+                <th>Odd</th>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Unique Id</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="h4 text-center"
+                *ngFor="let product of products;index as i; first as j;last as k;even as l;odd as m">
+                <td>{{i + 1}}</td>
+                <td>{{j}}</td>
+                <td>{{k}}</td>
+                <td>{{l}}</td>
+                <td>{{m}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.uniqueId}}</td>
+                <td><img src="{{product.img}}" [ngStyle]="styleObj" alt="{{product.name}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<br>
+<br>
