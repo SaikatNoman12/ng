@@ -1,3 +1,4 @@
+import { Routes, RouterModule } from '@angular/router';
 import { MyContainerComponent } from './myContainer/myContainer.component';
 
 import { NgModule } from '@angular/core';
@@ -28,6 +29,19 @@ import { IfElseThenComponent } from './if-else-then/if-else-then.component';
 import { SwitcCaseComponent } from './switc-case/switc-case.component';
 import { NgFORComponent } from './ng-for/ng-for.component';
 import { PushSpliceComponent } from './push-splice/push-splice.component';
+import { PrjectComponent } from './prject/prject.component';
+import { HomeComponent } from './prject/home/home.component';
+import { ContactComponent } from './prject/contact/contact.component';
+import { AboutComponent } from './prject/about/about.component';
+import { ProductsComponent } from './prject/products/products.component';
+
+
+const appRouting:Routes = [
+  {path:'', component:HomeComponent},
+  {path:'about', component:AboutComponent},
+  {path:'products', component:ProductsComponent},
+  {path:'contacts', component:ContactComponent},
+]
 
 
 @NgModule({
@@ -49,6 +63,11 @@ import { PushSpliceComponent } from './push-splice/push-splice.component';
     SwitcCaseComponent,
     NgFORComponent,
     PushSpliceComponent,
+    PrjectComponent,
+    HomeComponent,
+    ContactComponent,
+    AboutComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +78,7 @@ import { PushSpliceComponent } from './push-splice/push-splice.component';
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     BrowserAnimationsModule,
-
+    RouterModule.forRoot(appRouting),
   ],
   providers: [],
   bootstrap: [AppComponent]

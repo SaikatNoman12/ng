@@ -39,8 +39,6 @@ export class PushSpliceComponent implements OnInit {
 
 
   rvData: any;
-  inNumberData: any;
-
   onRemoveInput(inputRemove: any) {
 
     if (inputRemove.value === '' || inputRemove.value.trim() === '') {
