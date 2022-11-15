@@ -27,6 +27,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { IfElseThenComponent } from './if-else-then/if-else-then.component';
 import { SwitcCaseComponent } from './switc-case/switc-case.component';
 import { NgFORComponent } from './ng-for/ng-for.component';
+import { PushSpliceComponent } from './push-splice/push-splice.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { NgFORComponent } from './ng-for/ng-for.component';
     IfElseThenComponent,
     SwitcCaseComponent,
     NgFORComponent,
+    PushSpliceComponent,
   ],
   imports: [
     BrowserModule,

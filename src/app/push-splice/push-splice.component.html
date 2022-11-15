@@ -1,0 +1,36 @@
+<div class="container m-4">
+    <div class="col-8 m-auto">
+        <div class="col-8 w-100 d-flex align-items-center">
+            <input type="text" class="form-control me-4" placeholder="Enter your task..." #inputData>
+            <button class="btn btn-success col-md-2" (click)="onAddData(inputData)">
+                ADD
+            </button>
+        </div>
+        <div class="col-8 w-100 d-flex align-items-center mt-4">
+            <input type="text" class="form-control me-4" placeholder="Enter remove text..." #inputRemove>
+            <button class="btn btn-danger col-md-2" (click)="onRemoveInput(inputRemove)">
+                REMOVE
+            </button>
+        </div>
+    </div>
+
+    <div class="col-md-8 mx-auto mt-4">
+        <table class="table">
+            <thead class="table-dark h4">
+                <tr>
+                    <th>Name</th>
+                    <th class="text-end">Remove</th>
+                </tr>
+            </thead>
+
+            <tbody class="h5">
+                <tr *ngFor="let item of items; index as i">
+                    <td [style]="objData">{{item.name}}</td>
+                    <td class="text-end">
+                        <button class="btn btn-danger" (click)="removeData(i)">remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
